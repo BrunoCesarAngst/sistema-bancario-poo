@@ -165,6 +165,11 @@ public class Banco {
         int idade = scanner.nextInt();
         scanner.nextLine();
 
+        if (idade < 16) {
+            System.out.println("Você não pode abrir uma conta no banco (idade deve ser maior que 16)");
+            return null;
+        }
+
         System.out.println("data de nascimento: ");
         String dataNascimento = scanner.nextLine();
 
